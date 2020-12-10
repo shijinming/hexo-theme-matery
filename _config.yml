@@ -23,21 +23,21 @@ menu:
     url: /friends
     icon: fas fa-address-book
   # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+  Medias:
+   icon: fas fa-list
+   children:
+     - name: Musics
+       url: /musics
+       icon: fas fa-music
+     - name: Movies
+       url: /movies
+       icon: fas fa-film
+     - name: Books
+       url: /books
+       icon: fas fa-book
+     - name: Galleries
+       url: /galleries
+       icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
@@ -203,9 +203,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  avatar: /medias/portrait.jpg
+  career: Phd candidate
+  introduction: None.
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.

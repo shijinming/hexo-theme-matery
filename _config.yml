@@ -16,36 +16,36 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
+  # Contact:
+  #   url: /contact
+  #   icon: fas fa-comments
   Friends:
     url: /friends
     icon: fas fa-address-book
   # 二级菜单写法如下
-  Medias:
+  更多:
    icon: fas fa-list
    children:
-     - name: Musics
+     - name: 音乐
        url: /musics
        icon: fas fa-music
-     - name: Movies
+     - name: 电影
        url: /movies
        icon: fas fa-film
-     - name: Books
+     - name: 图书
        url: /books
        icon: fas fa-book
-     - name: Galleries
+     - name: 相册
        url: /galleries
        icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  enable: true
+  year: 2020 # 年份
+  month: 12 # 月份
+  date: 10 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -95,8 +95,8 @@ music:
 video:
   enable: false
   showTitle: true
-  title: 精彩视频
-  url: # 必填
+  title: MV
+  url: https://api.prprpr.me/dplayer/video/bilibili?aid=8520345
   pic:
   thumbnails:
   height: # 如：400
@@ -116,8 +116,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
-logo: /medias/logo.png
+favicon: /medias/portrait.png
+logo: /medias/portrait.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -126,7 +126,7 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/shijinming
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -160,7 +160,7 @@ code:
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
-  enable: true
+  enable: false
   title: 你的赏识是我前进的动力
   wechat: /medias/reward/wechat.png
   alipay: /medias/reward/alipay.jpg
@@ -189,10 +189,10 @@ mathjax:
 # 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 postInfo:
   date: true # 发布日期
-  update: false # 更新日期
-  wordCount: false # 文章字数统计
-  totalCount: false # 站点总文章字数
-  min2read: false # 文章阅读时长
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
   readCount: false # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
@@ -380,7 +380,7 @@ changyan:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/shijinming
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -523,8 +523,8 @@ tidio:
 
 # 腾讯兔小巢，见https://txc.qq.com/
 tuxiaochao:
-  enable: false
-  productId:
+  enable: true
+  productId: 298358
 #背景canvas-nest
 canvas_nest:
   enable: false
@@ -536,11 +536,11 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: false
+  enable: true
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  clickChange: false  # 设置是否每次点击都更换彩带.
+  clickChange: true  # 设置是否每次点击都更换彩带.
 
 # 背景动态彩带.
 ribbon_dynamic:
@@ -566,8 +566,8 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  sub1: Si no te esfuerzas hasta el máximo, ¿cómo sabrás dónde está tu límite?
+  sub2: 
 
 # 手机二级菜单.
 navMenu:
